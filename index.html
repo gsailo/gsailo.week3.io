@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced CSS Selectors</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            ul li:nth-child(3),
+            ul li:nth-child(4) {
+                color: red;
+            }
+
+            ol li:nth-child(2),
+            ol li:nth-child(4) {
+                font-size: 24px;
+            }
+
+            div {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+            }
+
+            div:nth-of-type(2) p:nth-of-type(2),
+            div:nth-of-type(2) p:nth-of-type(3) {
+                color: white;
+            }
+
+            div p:first-of-type {
+                font-style: italic;
+            }
+
+            button {
+                padding: 20px 30px;
+                border-radius: 20px;
+                border: 2px solid #000000;
+                margin-top: 10px;
+            }
+
+            button:hover {
+                background-color: blue;
+            }
+
+            button:active {
+                border-radius: 0;
+                width: 200px;
+                height: 150px;
+            }
+        </style>
+    </head>
+    <body>
+
+    </body>
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Cookies</li>
+        <li>Eggs</li>
+        <li>Tacos</li>
+    </ul>
+    <ol>
+        <li>Jet's Pizza</li>
+        <li>Jagger's</li>
+        <li>Don Cuervo</li>
+        <li>Applebee's</li>
+    </ol>
+    <div>
+        <p>Lorem ipsum</p>
+        <p>Lorem ipsum</p>
+        <p>Lorem ipsum</p>
+    </div>
+    <div>
+        <p>Lorem ipsum</p>
+        <p>Lorem ipsum</p>
+        <p>Lorem ipsum</p>
+    </div>
+    <div>
+        <p>Lorem ipsum</p>
+        <p>Lorem ipsum</p>
+        <p>Lorem ipsum</p>
+    </div>
+    <button>Interact</button>
+</html>
